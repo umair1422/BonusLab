@@ -6,6 +6,7 @@ testthat::test_that("correct result",{
 
 })
 
+
 testthat::test_that("Wrong results",{
   testthat::expect_error(ridgereg(formula,iris,a))
   testthat::expect_error(ridgereg(formula,iris,"a"))

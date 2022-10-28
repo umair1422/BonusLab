@@ -32,6 +32,7 @@ Ridgereg<-setRefClass("Ridgereg", fields = list(
   ridge_PValues = "vector",
   lambda="numeric"
 ),
+
 methods = list(
   initialize = function(formula, data, lam)
   {"Constructor to initialize the data fields of this class"

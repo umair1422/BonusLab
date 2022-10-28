@@ -19,5 +19,6 @@ library(Bonus)
 ```
 **Ridgereg()**
 this function takes the three parameters as an input and implements the least square method.
+
 **Ridgereg_QR()**
 this function takes the three parameters as an input and implements the QR decomposition method.
