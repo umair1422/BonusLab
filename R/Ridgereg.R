@@ -36,6 +36,10 @@ Ridgereg<-setRefClass("Ridgereg", fields = list(
 methods = list(
   initialize = function(formula, data, lam)
   {"Constructor to initialize the data fields of this class"
+    if (!(is.numeric(lambda)))
+    {
+      stop()
+    }
     FunctionFormula <<- formula
     DataName <<- deparse(substitute(data)) #get the name of dataframe
     lambda<<-lam

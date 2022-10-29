@@ -7,6 +7,10 @@
 #' newobj= Ridgereg(frm, iris,3)
 #' @export
 ridgereg_QR <- function(formula, data, lambda){
+  if (!(is.numeric(lambda)))
+  {
+    stop()
+  }
   call = match.call()
   X <- model.matrix(formula, data)
   standard_daviation <- c()
